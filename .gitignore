@@ -1,0 +1,12 @@
+# Created by .ignore support plugin (hsz.mobi)
+/.idea/*
+*/*.iml
+*.iml
+.idea
+#*/*/environment/local/**
+#**/environment/local/**
+*/target/**
+*/*/target/**
+target/**
+xksquare-trade-provider/src/environment/localtest/logback.xml
+xksquare-trade-provider/src/environment/localtest/application.yml
