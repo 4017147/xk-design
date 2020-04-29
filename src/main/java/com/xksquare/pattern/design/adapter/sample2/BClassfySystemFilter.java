@@ -11,12 +11,12 @@ public class BClassfySystemFilter implements SystemWordsFilter {
 
   @Override
   public String filter(String words) {
-    String nWord = systemWordsFilter.filter(words);
-    System.out.println("B类过滤器开始过滤--->>>>");
-    if (nWord == null || nWord == "") {
+    words = systemWordsFilter.filter(words);
+    if (words == null || words == "") {
       return null;
     }
-    return nWord.replace("*", "-");
+    System.out.println("B类过滤器开始过滤--->>>>");
+    return words.replace("*", "-");
   }
 
 }
