@@ -16,4 +16,6 @@ public abstract class Database {
   
   public abstract void add(String data);
   
+  public abstract void synAdd(String data);
+  
 }

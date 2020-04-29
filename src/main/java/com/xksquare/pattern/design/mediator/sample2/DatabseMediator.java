@@ -26,11 +26,11 @@ public class DatabseMediator implements DataMediator {
 
   public void add(DatabaseType databaseType, String data) {
     if (Objects.equals(DatabaseType.mysql, databaseType)) {
-      mysql.add(data);
+      mysql.synAdd(data);
     } else if (Objects.equals(DatabaseType.es, databaseType)) {
-      es.add(data);
+      es.synAdd(data);
     } else if (Objects.equals(DatabaseType.redis, databaseType)) {
-      redis.add(data);
+      redis.synAdd(data);
     }
   }
 
